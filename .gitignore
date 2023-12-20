@@ -1,0 +1,8 @@
+/Account/vendor
+/Account/.env
+/Ride/vendor
+/Ride/.env
+/.idea
+Homestead.json
+Homestead.yaml
+.phpunit.result.cache

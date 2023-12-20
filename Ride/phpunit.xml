@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/10.5/phpunit.xsd" bootstrap="vendor/autoload.php" colors="true" cacheDirectory=".phpunit.cache">
+  <testsuites>
+    <testsuite name="Integration">
+      <directory suffix="Test.php">./Tests/Integration</directory>
+    </testsuite>
+    <testsuite name="Unit">
+      <directory suffix="Test.php">./Tests/Unit</directory>
+    </testsuite>
+  </testsuites>
+  <coverage>
+    <report>
+      <html outputDirectory="./Tests/Coverage/Html"/>
+    </report>
+  </coverage>
+  <source>
+    <include>
+      <directory suffix=".php">./</directory>
+      <directory prefix=".php-cs-fixer.">.</directory>
+    </include>
+    <exclude>
+      <directory>./Queue</directory>
+      <directory>./vendor</directory>
+      <directory>./Tests</directory>
+      <directory>./var</directory>
+      <directory>./index.php</directory>
+    </exclude>
+  </source>
+</phpunit>

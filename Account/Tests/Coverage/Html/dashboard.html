@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Dashboard for /var/www/Account</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="_css/bootstrap.min.css?v=9.2.29" rel="stylesheet" type="text/css">
+  <link href="_css/nv.d3.min.css?v=9.2.29" rel="stylesheet" type="text/css">
+  <link href="_css/style.css?v=9.2.29" rel="stylesheet" type="text/css">
+  <link href="_css/custom.css" rel="stylesheet" type="text/css">
+ </head>
+ <body>
+  <header>
+   <div class="container-fluid">
+    <div class="row">
+     <div class="col-md-12">
+      <nav aria-label="breadcrumb">
+       <ol class="breadcrumb">
+         <li class="breadcrumb-item"><a href="index.html">/var/www/Account</a></li>
+         <li class="breadcrumb-item active">(Dashboard)</li>
+
+       </ol>
+      </nav>
+     </div>
+    </div>
+   </div>
+  </header>
+  <div class="container-fluid">
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Classes</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="classCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="classComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Application/Exceptions/Handler.php.html#12">Account\Application\Exceptions\Handler</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Application/UseCase/ActivateAccount.php.html#10">Account\Application\UseCase\ActivateAccount</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Application/UseCase/DTO/ActivateAccountInput.php.html#5">Account\Application\UseCase\DTO\ActivateAccountInput</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Application/UseCase/DTO/ActivateAccountOutput.php.html#5">Account\Application\UseCase\DTO\ActivateAccountOutput</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Application/UseCase/DTO/ForgetAccountInput.php.html#5">Account\Application\UseCase\DTO\ForgetAccountInput</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Application/UseCase/DTO/ForgetAccountOutput.php.html#5">Account\Application\UseCase\DTO\ForgetAccountOutput</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Application/UseCase/DTO/LoginInput.php.html#5">Account\Application\UseCase\DTO\LoginInput</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Application/UseCase/DTO/LoginOutput.php.html#5">Account\Application\UseCase\DTO\LoginOutput</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Application/UseCase/DTO/UpdateAccountInput.php.html#5">Account\Application\UseCase\DTO\UpdateAccountInput</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Application/UseCase/DTO/UpdateAccountOutput.php.html#5">Account\Application\UseCase\DTO\UpdateAccountOutput</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Application/UseCase/ForgetAccount.php.html#10">Account\Application\UseCase\ForgetAccount</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Application/UseCase/Login.php.html#10">Account\Application\UseCase\Login</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Application/UseCase/UpdateAccount.php.html#12">Account\Application\UseCase\UpdateAccount</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Domain/ActiveStatus.php.html#7">Account\Domain\ActiveStatus</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Domain/ForgottenStatus.php.html#7">Account\Domain\ForgottenStatus</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Domain/PlainPassword.php.html#5">Account\Domain\PlainPassword</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Infra/Controller/QueueController.php.html#9">Account\Infra\Controller\QueueController</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Infra/Gateway/MailerGatewayAmazon.php.html#7">Account\Infra\Gateway\MailerGatewayAmazon</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Domain/StatusFactory.php.html#7">Account\Domain\StatusFactory</a></td><td class="text-right">25%</td></tr>
+       <tr><td><a href="Domain/CreatedStatus.php.html#7">Account\Domain\CreatedStatus</a></td><td class="text-right">40%</td></tr>
+       <tr><td><a href="Infra/Repository/AccountRepositoryDatabase.php.html#10">Account\Infra\Repository\AccountRepositoryDatabase</a></td><td class="text-right">42%</td></tr>
+       <tr><td><a href="Infra/Queue/RabbitMQAdapter.php.html#9">Account\Infra\Queue\RabbitMQAdapter</a></td><td class="text-right">56%</td></tr>
+       <tr><td><a href="Infra/Controller/Validator/SignupRequestValidator.php.html#9">Account\Infra\Controller\Validator\SignupRequestValidator</a></td><td class="text-right">60%</td></tr>
+       <tr><td><a href="Domain/Account.php.html#7">Account\Domain\Account</a></td><td class="text-right">66%</td></tr>
+       <tr><td><a href="Domain/PasswordFactory.php.html#7">Account\Domain\PasswordFactory</a></td><td class="text-right">66%</td></tr>
+       <tr><td><a href="Domain/Email.php.html#7">Account\Domain\Email</a></td><td class="text-right">75%</td></tr>
+       <tr><td><a href="Infra/Database/MySqlPromiseAdapter.php.html#8">Account\Infra\Database\MySqlPromiseAdapter</a></td><td class="text-right">75%</td></tr>
+       <tr><td><a href="Domain/HashPassword.php.html#5">Account\Domain\HashPassword</a></td><td class="text-right">83%</td></tr>
+       <tr><td><a href="Domain/Cpf.php.html#8">Account\Domain\Cpf</a></td><td class="text-right">84%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Application/UseCase/UpdateAccount.php.html#12">Account\Application\UseCase\UpdateAccount</a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="Infra/Repository/AccountRepositoryDatabase.php.html#10">Account\Infra\Repository\AccountRepositoryDatabase</a></td><td class="text-right">24</td></tr>
+       <tr><td><a href="Application/UseCase/Login.php.html#10">Account\Application\UseCase\Login</a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="Domain/Cpf.php.html#8">Account\Domain\Cpf</a></td><td class="text-right">15</td></tr>
+       <tr><td><a href="Application/UseCase/ActivateAccount.php.html#10">Account\Application\UseCase\ActivateAccount</a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Application/UseCase/ForgetAccount.php.html#10">Account\Application\UseCase\ForgetAccount</a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Domain/StatusFactory.php.html#7">Account\Domain\StatusFactory</a></td><td class="text-right">10</td></tr>
+       <tr><td><a href="Infra/Queue/RabbitMQAdapter.php.html#9">Account\Infra\Queue\RabbitMQAdapter</a></td><td class="text-right">5</td></tr>
+       <tr><td><a href="Infra/Controller/Validator/SignupRequestValidator.php.html#9">Account\Infra\Controller\Validator\SignupRequestValidator</a></td><td class="text-right">5</td></tr>
+       <tr><td><a href="Domain/PasswordFactory.php.html#7">Account\Domain\PasswordFactory</a></td><td class="text-right">3</td></tr>
+       <tr><td><a href="Domain/Email.php.html#7">Account\Domain\Email</a></td><td class="text-right">3</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Methods</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="methodCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="methodComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Application/Exceptions/Handler.php.html#36"><abbr title="Account\Application\Exceptions\Handler::report">report</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Application/Exceptions/Handler.php.html#50"><abbr title="Account\Application\Exceptions\Handler::render">render</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Application/UseCase/ActivateAccount.php.html#12"><abbr title="Account\Application\UseCase\ActivateAccount::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Application/UseCase/ActivateAccount.php.html#19"><abbr title="Account\Application\UseCase\ActivateAccount::execute">execute</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Application/UseCase/DTO/ActivateAccountInput.php.html#7"><abbr title="Account\Application\UseCase\DTO\ActivateAccountInput::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Application/UseCase/DTO/ActivateAccountOutput.php.html#7"><abbr title="Account\Application\UseCase\DTO\ActivateAccountOutput::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Application/UseCase/DTO/ForgetAccountInput.php.html#7"><abbr title="Account\Application\UseCase\DTO\ForgetAccountInput::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Application/UseCase/DTO/ForgetAccountOutput.php.html#7"><abbr title="Account\Application\UseCase\DTO\ForgetAccountOutput::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Application/UseCase/DTO/LoginInput.php.html#7"><abbr title="Account\Application\UseCase\DTO\LoginInput::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Application/UseCase/DTO/LoginOutput.php.html#7"><abbr title="Account\Application\UseCase\DTO\LoginOutput::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Application/UseCase/DTO/UpdateAccountInput.php.html#7"><abbr title="Account\Application\UseCase\DTO\UpdateAccountInput::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Application/UseCase/DTO/UpdateAccountOutput.php.html#7"><abbr title="Account\Application\UseCase\DTO\UpdateAccountOutput::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Application/UseCase/ForgetAccount.php.html#12"><abbr title="Account\Application\UseCase\ForgetAccount::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Application/UseCase/ForgetAccount.php.html#21"><abbr title="Account\Application\UseCase\ForgetAccount::execute">execute</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Application/UseCase/Login.php.html#12"><abbr title="Account\Application\UseCase\Login::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Application/UseCase/Login.php.html#19"><abbr title="Account\Application\UseCase\Login::execute">execute</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Application/UseCase/UpdateAccount.php.html#14"><abbr title="Account\Application\UseCase\UpdateAccount::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Application/UseCase/UpdateAccount.php.html#23"><abbr title="Account\Application\UseCase\UpdateAccount::execute">execute</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Domain/Account.php.html#49"><abbr title="Account\Domain\Account::active">active</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Domain/Account.php.html#54"><abbr title="Account\Domain\Account::forget">forget</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Domain/Account.php.html#59"><abbr title="Account\Domain\Account::getStatus">getStatus</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Domain/ActiveStatus.php.html#10"><abbr title="Account\Domain\ActiveStatus::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Domain/ActiveStatus.php.html#19"><abbr title="Account\Domain\ActiveStatus::create">create</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Domain/ActiveStatus.php.html#27"><abbr title="Account\Domain\ActiveStatus::active">active</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Domain/ActiveStatus.php.html#32"><abbr title="Account\Domain\ActiveStatus::forget">forget</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Domain/CreatedStatus.php.html#19"><abbr title="Account\Domain\CreatedStatus::create">create</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Domain/CreatedStatus.php.html#24"><abbr title="Account\Domain\CreatedStatus::active">active</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Domain/CreatedStatus.php.html#29"><abbr title="Account\Domain\CreatedStatus::forget">forget</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Domain/ForgottenStatus.php.html#10"><abbr title="Account\Domain\ForgottenStatus::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Domain/ForgottenStatus.php.html#19"><abbr title="Account\Domain\ForgottenStatus::create">create</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Domain/ForgottenStatus.php.html#27"><abbr title="Account\Domain\ForgottenStatus::active">active</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Domain/ForgottenStatus.php.html#35"><abbr title="Account\Domain\ForgottenStatus::forget">forget</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Domain/HashPassword.php.html#26"><abbr title="Account\Domain\HashPassword::validate">validate</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Domain/PlainPassword.php.html#8"><abbr title="Account\Domain\PlainPassword::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Domain/PlainPassword.php.html#12"><abbr title="Account\Domain\PlainPassword::create">create</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Domain/PlainPassword.php.html#17"><abbr title="Account\Domain\PlainPassword::restore">restore</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Domain/PlainPassword.php.html#22"><abbr title="Account\Domain\PlainPassword::validate">validate</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Domain/PlainPassword.php.html#27"><abbr title="Account\Domain\PlainPassword::getValue">getValue</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Infra/Controller/QueueController.php.html#11"><abbr title="Account\Infra\Controller\QueueController::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Infra/Controller/QueueController.php.html#15"><abbr title="Account\Infra\Controller\QueueController::consumeAccountCreatedSendEmail">consumeAccountCreatedSendEmail</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Infra/Database/MySqlPromiseAdapter.php.html#22"><abbr title="Account\Infra\Database\MySqlPromiseAdapter::close">close</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Infra/Gateway/MailerGatewayAmazon.php.html#10"><abbr title="Account\Infra\Gateway\MailerGatewayAmazon::send">send</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Infra/Queue/RabbitMQAdapter.php.html#32"><abbr title="Account\Infra\Queue\RabbitMQAdapter::consume">consume</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Infra/Repository/AccountRepositoryDatabase.php.html#61"><abbr title="Account\Infra\Repository\AccountRepositoryDatabase::getByVerificationCode">getByVerificationCode</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Infra/Repository/AccountRepositoryDatabase.php.html#87"><abbr title="Account\Infra\Repository\AccountRepositoryDatabase::update">update</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Infra/Repository/AccountRepositoryDatabase.php.html#40"><abbr title="Account\Infra\Repository\AccountRepositoryDatabase::getByEmail">getByEmail</abbr></a></td><td class="text-right">14%</td></tr>
+       <tr><td><a href="Domain/StatusFactory.php.html#12"><abbr title="Account\Domain\StatusFactory::create">create</abbr></a></td><td class="text-right">25%</td></tr>
+       <tr><td><a href="Infra/Controller/Validator/SignupRequestValidator.php.html#24"><abbr title="Account\Infra\Controller\Validator\SignupRequestValidator::execute">execute</abbr></a></td><td class="text-right">60%</td></tr>
+       <tr><td><a href="Domain/Cpf.php.html#15"><abbr title="Account\Domain\Cpf::__construct">__construct</abbr></a></td><td class="text-right">66%</td></tr>
+       <tr><td><a href="Domain/Email.php.html#14"><abbr title="Account\Domain\Email::__construct">__construct</abbr></a></td><td class="text-right">66%</td></tr>
+       <tr><td><a href="Domain/PasswordFactory.php.html#12"><abbr title="Account\Domain\PasswordFactory::create">create</abbr></a></td><td class="text-right">66%</td></tr>
+       <tr><td><a href="Domain/Cpf.php.html#23"><abbr title="Account\Domain\Cpf::validate">validate</abbr></a></td><td class="text-right">75%</td></tr>
+       <tr><td><a href="Infra/Controller/AccountController.php.html#31"><abbr title="Account\Infra\Controller\AccountController::signup">signup</abbr></a></td><td class="text-right">88%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Application/UseCase/UpdateAccount.php.html#23"><abbr title="Account\Application\UseCase\UpdateAccount::execute">execute</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="Application/UseCase/Login.php.html#19"><abbr title="Account\Application\UseCase\Login::execute">execute</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Domain/StatusFactory.php.html#12"><abbr title="Account\Domain\StatusFactory::create">create</abbr></a></td><td class="text-right">10</td></tr>
+       <tr><td><a href="Application/UseCase/ActivateAccount.php.html#19"><abbr title="Account\Application\UseCase\ActivateAccount::execute">execute</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Application/UseCase/ForgetAccount.php.html#21"><abbr title="Account\Application\UseCase\ForgetAccount::execute">execute</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Infra/Queue/RabbitMQAdapter.php.html#32"><abbr title="Account\Infra\Queue\RabbitMQAdapter::consume">consume</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Infra/Repository/AccountRepositoryDatabase.php.html#61"><abbr title="Account\Infra\Repository\AccountRepositoryDatabase::getByVerificationCode">getByVerificationCode</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Infra/Controller/Validator/SignupRequestValidator.php.html#24"><abbr title="Account\Infra\Controller\Validator\SignupRequestValidator::execute">execute</abbr></a></td><td class="text-right">5</td></tr>
+       <tr><td><a href="Infra/Repository/AccountRepositoryDatabase.php.html#40"><abbr title="Account\Infra\Repository\AccountRepositoryDatabase::getByEmail">getByEmail</abbr></a></td><td class="text-right">4</td></tr>
+       <tr><td><a href="Domain/Cpf.php.html#23"><abbr title="Account\Domain\Cpf::validate">validate</abbr></a></td><td class="text-right">4</td></tr>
+       <tr><td><a href="Domain/PasswordFactory.php.html#12"><abbr title="Account\Domain\PasswordFactory::create">create</abbr></a></td><td class="text-right">3</td></tr>
+       <tr><td><a href="Infra/Controller/AccountController.php.html#31"><abbr title="Account\Infra\Controller\AccountController::signup">signup</abbr></a></td><td class="text-right">3</td></tr>
+       <tr><td><a href="Domain/Cpf.php.html#15"><abbr title="Account\Domain\Cpf::__construct">__construct</abbr></a></td><td class="text-right">2</td></tr>
+       <tr><td><a href="Domain/Email.php.html#14"><abbr title="Account\Domain\Email::__construct">__construct</abbr></a></td><td class="text-right">2</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <footer>
+    <hr/>
+    <p>
+     <small>Generated by <a href="https://github.com/sebastianbergmann/php-code-coverage" target="_top">php-code-coverage 9.2.29</a> using <a href="https://secure.php.net/" target="_top">PHP 8.2.12</a> and <a href="https://phpunit.de/">PHPUnit 9.6.15</a> at Thu Dec 14 14:50:40 UTC 2023.</small>
+    </p>
+   </footer>
+  </div>
+  <script src="_js/jquery.min.js?v=9.2.29" type="text/javascript"></script>
+  <script src="_js/d3.min.js?v=9.2.29" type="text/javascript"></script>
+  <script src="_js/nv.d3.min.js?v=9.2.29" type="text/javascript"></script>
+  <script type="text/javascript">
+$(document).ready(function() {
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#classCoverageDistribution svg')
+      .datum(getCoverageDistributionData([18,0,0,1,0,2,1,3,2,2,1,7], "Class Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#methodCoverageDistribution svg')
+      .datum(getCoverageDistributionData([45,0,1,1,0,0,0,4,1,1,0,36], "Method Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getCoverageDistributionData(data, label) {
+    var labels = [
+      '0%',
+      '0-10%',
+      '10-20%',
+      '20-30%',
+      '30-40%',
+      '40-50%',
+      '50-60%',
+      '60-70%',
+      '70-80%',
+      '80-90%',
+      '90-100%',
+      '100%'
+    ];
+    var values = [];
+    $.each(labels, function(key) {
+      values.push({x: labels[key], y: data[key]});
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.tooltipContent(function(graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Cyclomatic Complexity');
+
+    d3.select('#classComplexity svg')
+      .datum(getComplexityData([[0,2,"<a href=\"Application\/Exceptions\/Handler.php.html#12\">Account\\Application\\Exceptions\\Handler<\/a>"],[0,3,"<a href=\"Application\/UseCase\/ActivateAccount.php.html#10\">Account\\Application\\UseCase\\ActivateAccount<\/a>"],[0,1,"<a href=\"Application\/UseCase\/DTO\/ActivateAccountInput.php.html#5\">Account\\Application\\UseCase\\DTO\\ActivateAccountInput<\/a>"],[0,1,"<a href=\"Application\/UseCase\/DTO\/ActivateAccountOutput.php.html#5\">Account\\Application\\UseCase\\DTO\\ActivateAccountOutput<\/a>"],[0,1,"<a href=\"Application\/UseCase\/DTO\/ForgetAccountInput.php.html#5\">Account\\Application\\UseCase\\DTO\\ForgetAccountInput<\/a>"],[0,1,"<a href=\"Application\/UseCase\/DTO\/ForgetAccountOutput.php.html#5\">Account\\Application\\UseCase\\DTO\\ForgetAccountOutput<\/a>"],[100,1,"<a href=\"Application\/UseCase\/DTO\/GetAccountInput.php.html#5\">Account\\Application\\UseCase\\DTO\\GetAccountInput<\/a>"],[100,1,"<a href=\"Application\/UseCase\/DTO\/GetAccountOutput.php.html#5\">Account\\Application\\UseCase\\DTO\\GetAccountOutput<\/a>"],[0,1,"<a href=\"Application\/UseCase\/DTO\/LoginInput.php.html#5\">Account\\Application\\UseCase\\DTO\\LoginInput<\/a>"],[0,1,"<a href=\"Application\/UseCase\/DTO\/LoginOutput.php.html#5\">Account\\Application\\UseCase\\DTO\\LoginOutput<\/a>"],[100,1,"<a href=\"Application\/UseCase\/DTO\/SignupInput.php.html#5\">Account\\Application\\UseCase\\DTO\\SignupInput<\/a>"],[100,1,"<a href=\"Application\/UseCase\/DTO\/SignupOutput.php.html#5\">Account\\Application\\UseCase\\DTO\\SignupOutput<\/a>"],[0,1,"<a href=\"Application\/UseCase\/DTO\/UpdateAccountInput.php.html#5\">Account\\Application\\UseCase\\DTO\\UpdateAccountInput<\/a>"],[0,1,"<a href=\"Application\/UseCase\/DTO\/UpdateAccountOutput.php.html#5\">Account\\Application\\UseCase\\DTO\\UpdateAccountOutput<\/a>"],[0,3,"<a href=\"Application\/UseCase\/ForgetAccount.php.html#10\">Account\\Application\\UseCase\\ForgetAccount<\/a>"],[100,3,"<a href=\"Application\/UseCase\/GetAccount.php.html#11\">Account\\Application\\UseCase\\GetAccount<\/a>"],[0,4,"<a href=\"Application\/UseCase\/Login.php.html#10\">Account\\Application\\UseCase\\Login<\/a>"],[100,3,"<a href=\"Application\/UseCase\/Signup.php.html#13\">Account\\Application\\UseCase\\Signup<\/a>"],[0,5,"<a href=\"Application\/UseCase\/UpdateAccount.php.html#12\">Account\\Application\\UseCase\\UpdateAccount<\/a>"],[66.66666666666666,6,"<a href=\"Domain\/Account.php.html#7\">Account\\Domain\\Account<\/a>"],[0,4,"<a href=\"Domain\/ActiveStatus.php.html#7\">Account\\Domain\\ActiveStatus<\/a>"],[84.61538461538461,15,"<a href=\"Domain\/Cpf.php.html#8\">Account\\Domain\\Cpf<\/a>"],[40,4,"<a href=\"Domain\/CreatedStatus.php.html#7\">Account\\Domain\\CreatedStatus<\/a>"],[75,3,"<a href=\"Domain\/Email.php.html#7\">Account\\Domain\\Email<\/a>"],[0,4,"<a href=\"Domain\/ForgottenStatus.php.html#7\">Account\\Domain\\ForgottenStatus<\/a>"],[83.33333333333334,5,"<a href=\"Domain\/HashPassword.php.html#5\">Account\\Domain\\HashPassword<\/a>"],[66.66666666666666,3,"<a href=\"Domain\/PasswordFactory.php.html#7\">Account\\Domain\\PasswordFactory<\/a>"],[0,5,"<a href=\"Domain\/PlainPassword.php.html#5\">Account\\Domain\\PlainPassword<\/a>"],[100,1,"<a href=\"Domain\/Status.php.html#5\">Account\\Domain\\Status<\/a>"],[25,4,"<a href=\"Domain\/StatusFactory.php.html#7\">Account\\Domain\\StatusFactory<\/a>"],[92,6,"<a href=\"Infra\/Controller\/AccountController.php.html#22\">Account\\Infra\\Controller\\AccountController<\/a>"],[0,2,"<a href=\"Infra\/Controller\/QueueController.php.html#9\">Account\\Infra\\Controller\\QueueController<\/a>"],[60,4,"<a href=\"Infra\/Controller\/Validator\/SignupRequestValidator.php.html#9\">Account\\Infra\\Controller\\Validator\\SignupRequestValidator<\/a>"],[75,3,"<a href=\"Infra\/Database\/MySqlPromiseAdapter.php.html#8\">Account\\Infra\\Database\\MySqlPromiseAdapter<\/a>"],[0,1,"<a href=\"Infra\/Gateway\/MailerGatewayAmazon.php.html#7\">Account\\Infra\\Gateway\\MailerGatewayAmazon<\/a>"],[56.25,4,"<a href=\"Infra\/Queue\/RabbitMQAdapter.php.html#9\">Account\\Infra\\Queue\\RabbitMQAdapter<\/a>"],[42,9,"<a href=\"Infra\/Repository\/AccountRepositoryDatabase.php.html#10\">Account\\Infra\\Repository\\AccountRepositoryDatabase<\/a>"]], 'Class Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.tooltipContent(function(graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Method Complexity');
+
+    d3.select('#methodComplexity svg')
+      .datum(getComplexityData([[0,1,"<a href=\"Application\/Exceptions\/Handler.php.html#36\">Account\\Application\\Exceptions\\Handler::report<\/a>"],[0,1,"<a href=\"Application\/Exceptions\/Handler.php.html#50\">Account\\Application\\Exceptions\\Handler::render<\/a>"],[0,1,"<a href=\"Application\/UseCase\/ActivateAccount.php.html#12\">Account\\Application\\UseCase\\ActivateAccount::__construct<\/a>"],[0,2,"<a href=\"Application\/UseCase\/ActivateAccount.php.html#19\">Account\\Application\\UseCase\\ActivateAccount::execute<\/a>"],[0,1,"<a href=\"Application\/UseCase\/DTO\/ActivateAccountInput.php.html#7\">Account\\Application\\UseCase\\DTO\\ActivateAccountInput::__construct<\/a>"],[0,1,"<a href=\"Application\/UseCase\/DTO\/ActivateAccountOutput.php.html#7\">Account\\Application\\UseCase\\DTO\\ActivateAccountOutput::__construct<\/a>"],[0,1,"<a href=\"Application\/UseCase\/DTO\/ForgetAccountInput.php.html#7\">Account\\Application\\UseCase\\DTO\\ForgetAccountInput::__construct<\/a>"],[0,1,"<a href=\"Application\/UseCase\/DTO\/ForgetAccountOutput.php.html#7\">Account\\Application\\UseCase\\DTO\\ForgetAccountOutput::__construct<\/a>"],[100,1,"<a href=\"Application\/UseCase\/DTO\/GetAccountInput.php.html#7\">Account\\Application\\UseCase\\DTO\\GetAccountInput::__construct<\/a>"],[100,1,"<a href=\"Application\/UseCase\/DTO\/GetAccountOutput.php.html#7\">Account\\Application\\UseCase\\DTO\\GetAccountOutput::__construct<\/a>"],[0,1,"<a href=\"Application\/UseCase\/DTO\/LoginInput.php.html#7\">Account\\Application\\UseCase\\DTO\\LoginInput::__construct<\/a>"],[0,1,"<a href=\"Application\/UseCase\/DTO\/LoginOutput.php.html#7\">Account\\Application\\UseCase\\DTO\\LoginOutput::__construct<\/a>"],[100,1,"<a href=\"Application\/UseCase\/DTO\/SignupInput.php.html#7\">Account\\Application\\UseCase\\DTO\\SignupInput::__construct<\/a>"],[100,1,"<a href=\"Application\/UseCase\/DTO\/SignupOutput.php.html#7\">Account\\Application\\UseCase\\DTO\\SignupOutput::__construct<\/a>"],[0,1,"<a href=\"Application\/UseCase\/DTO\/UpdateAccountInput.php.html#7\">Account\\Application\\UseCase\\DTO\\UpdateAccountInput::__construct<\/a>"],[0,1,"<a href=\"Application\/UseCase\/DTO\/UpdateAccountOutput.php.html#7\">Account\\Application\\UseCase\\DTO\\UpdateAccountOutput::__construct<\/a>"],[0,1,"<a href=\"Application\/UseCase\/ForgetAccount.php.html#12\">Account\\Application\\UseCase\\ForgetAccount::__construct<\/a>"],[0,2,"<a href=\"Application\/UseCase\/ForgetAccount.php.html#21\">Account\\Application\\UseCase\\ForgetAccount::execute<\/a>"],[100,1,"<a href=\"Application\/UseCase\/GetAccount.php.html#13\">Account\\Application\\UseCase\\GetAccount::__construct<\/a>"],[100,2,"<a href=\"Application\/UseCase\/GetAccount.php.html#20\">Account\\Application\\UseCase\\GetAccount::execute<\/a>"],[0,1,"<a href=\"Application\/UseCase\/Login.php.html#12\">Account\\Application\\UseCase\\Login::__construct<\/a>"],[0,3,"<a href=\"Application\/UseCase\/Login.php.html#19\">Account\\Application\\UseCase\\Login::execute<\/a>"],[100,1,"<a href=\"Application\/UseCase\/Signup.php.html#15\">Account\\Application\\UseCase\\Signup::__construct<\/a>"],[100,2,"<a href=\"Application\/UseCase\/Signup.php.html#25\">Account\\Application\\UseCase\\Signup::execute<\/a>"],[0,1,"<a href=\"Application\/UseCase\/UpdateAccount.php.html#14\">Account\\Application\\UseCase\\UpdateAccount::__construct<\/a>"],[0,4,"<a href=\"Application\/UseCase\/UpdateAccount.php.html#23\">Account\\Application\\UseCase\\UpdateAccount::execute<\/a>"],[100,1,"<a href=\"Domain\/Account.php.html#14\">Account\\Domain\\Account::__construct<\/a>"],[100,1,"<a href=\"Domain\/Account.php.html#33\">Account\\Domain\\Account::create<\/a>"],[100,1,"<a href=\"Domain\/Account.php.html#44\">Account\\Domain\\Account::restore<\/a>"],[0,1,"<a href=\"Domain\/Account.php.html#49\">Account\\Domain\\Account::active<\/a>"],[0,1,"<a href=\"Domain\/Account.php.html#54\">Account\\Domain\\Account::forget<\/a>"],[0,1,"<a href=\"Domain\/Account.php.html#59\">Account\\Domain\\Account::getStatus<\/a>"],[0,1,"<a href=\"Domain\/ActiveStatus.php.html#10\">Account\\Domain\\ActiveStatus::__construct<\/a>"],[0,1,"<a href=\"Domain\/ActiveStatus.php.html#19\">Account\\Domain\\ActiveStatus::create<\/a>"],[0,1,"<a href=\"Domain\/ActiveStatus.php.html#27\">Account\\Domain\\ActiveStatus::active<\/a>"],[0,1,"<a href=\"Domain\/ActiveStatus.php.html#32\">Account\\Domain\\ActiveStatus::forget<\/a>"],[66.66666666666666,2,"<a href=\"Domain\/Cpf.php.html#15\">Account\\Domain\\Cpf::__construct<\/a>"],[75,4,"<a href=\"Domain\/Cpf.php.html#23\">Account\\Domain\\Cpf::validate<\/a>"],[100,1,"<a href=\"Domain\/Cpf.php.html#42\">Account\\Domain\\Cpf::clean<\/a>"],[100,1,"<a href=\"Domain\/Cpf.php.html#47\">Account\\Domain\\Cpf::isInvalidLength<\/a>"],[100,1,"<a href=\"Domain\/Cpf.php.html#52\">Account\\Domain\\Cpf::allDigitsTheSame<\/a>"],[100,4,"<a href=\"Domain\/Cpf.php.html#64\">Account\\Domain\\Cpf::calculateDigit<\/a>"],[100,1,"<a href=\"Domain\/Cpf.php.html#76\">Account\\Domain\\Cpf::extractDigit<\/a>"],[100,1,"<a href=\"Domain\/Cpf.php.html#81\">Account\\Domain\\Cpf::getValue<\/a>"],[100,1,"<a href=\"Domain\/CreatedStatus.php.html#10\">Account\\Domain\\CreatedStatus::__construct<\/a>"],[0,1,"<a href=\"Domain\/CreatedStatus.php.html#19\">Account\\Domain\\CreatedStatus::create<\/a>"],[0,1,"<a href=\"Domain\/CreatedStatus.php.html#24\">Account\\Domain\\CreatedStatus::active<\/a>"],[0,1,"<a href=\"Domain\/CreatedStatus.php.html#29\">Account\\Domain\\CreatedStatus::forget<\/a>"],[66.66666666666666,2,"<a href=\"Domain\/Email.php.html#14\">Account\\Domain\\Email::__construct<\/a>"],[100,1,"<a href=\"Domain\/Email.php.html#22\">Account\\Domain\\Email::getValue<\/a>"],[0,1,"<a href=\"Domain\/ForgottenStatus.php.html#10\">Account\\Domain\\ForgottenStatus::__construct<\/a>"],[0,1,"<a href=\"Domain\/ForgottenStatus.php.html#19\">Account\\Domain\\ForgottenStatus::create<\/a>"],[0,1,"<a href=\"Domain\/ForgottenStatus.php.html#27\">Account\\Domain\\ForgottenStatus::active<\/a>"],[0,1,"<a href=\"Domain\/ForgottenStatus.php.html#35\">Account\\Domain\\ForgottenStatus::forget<\/a>"],[100,1,"<a href=\"Domain\/HashPassword.php.html#10\">Account\\Domain\\HashPassword::__construct<\/a>"],[100,1,"<a href=\"Domain\/HashPassword.php.html#15\">Account\\Domain\\HashPassword::create<\/a>"],[100,1,"<a href=\"Domain\/HashPassword.php.html#21\">Account\\Domain\\HashPassword::restore<\/a>"],[0,1,"<a href=\"Domain\/HashPassword.php.html#26\">Account\\Domain\\HashPassword::validate<\/a>"],[100,1,"<a href=\"Domain\/HashPassword.php.html#31\">Account\\Domain\\HashPassword::getValue<\/a>"],[66.66666666666666,3,"<a href=\"Domain\/PasswordFactory.php.html#12\">Account\\Domain\\PasswordFactory::create<\/a>"],[0,1,"<a href=\"Domain\/PlainPassword.php.html#8\">Account\\Domain\\PlainPassword::__construct<\/a>"],[0,1,"<a href=\"Domain\/PlainPassword.php.html#12\">Account\\Domain\\PlainPassword::create<\/a>"],[0,1,"<a href=\"Domain\/PlainPassword.php.html#17\">Account\\Domain\\PlainPassword::restore<\/a>"],[0,1,"<a href=\"Domain\/PlainPassword.php.html#22\">Account\\Domain\\PlainPassword::validate<\/a>"],[0,1,"<a href=\"Domain\/PlainPassword.php.html#27\">Account\\Domain\\PlainPassword::getValue<\/a>"],[100,1,"<a href=\"Domain\/Status.php.html#8\">Account\\Domain\\Status::__construct<\/a>"],[100,0,"<a href=\"Domain\/Status.php.html#12\">Account\\Domain\\Status::create<\/a>"],[100,0,"<a href=\"Domain\/Status.php.html#13\">Account\\Domain\\Status::active<\/a>"],[100,0,"<a href=\"Domain\/Status.php.html#14\">Account\\Domain\\Status::forget<\/a>"],[25,4,"<a href=\"Domain\/StatusFactory.php.html#12\">Account\\Domain\\StatusFactory::create<\/a>"],[100,1,"<a href=\"Infra\/Controller\/AccountController.php.html#26\">Account\\Infra\\Controller\\AccountController::__construct<\/a>"],[88.88888888888889,3,"<a href=\"Infra\/Controller\/AccountController.php.html#31\">Account\\Infra\\Controller\\AccountController::signup<\/a>"],[100,2,"<a href=\"Infra\/Controller\/AccountController.php.html#55\">Account\\Infra\\Controller\\AccountController::getById<\/a>"],[0,1,"<a href=\"Infra\/Controller\/QueueController.php.html#11\">Account\\Infra\\Controller\\QueueController::__construct<\/a>"],[0,1,"<a href=\"Infra\/Controller\/QueueController.php.html#15\">Account\\Infra\\Controller\\QueueController::consumeAccountCreatedSendEmail<\/a>"],[60,4,"<a href=\"Infra\/Controller\/Validator\/SignupRequestValidator.php.html#24\">Account\\Infra\\Controller\\Validator\\SignupRequestValidator::execute<\/a>"],[100,1,"<a href=\"Infra\/Database\/MySqlPromiseAdapter.php.html#11\">Account\\Infra\\Database\\MySqlPromiseAdapter::__construct<\/a>"],[100,1,"<a href=\"Infra\/Database\/MySqlPromiseAdapter.php.html#17\">Account\\Infra\\Database\\MySqlPromiseAdapter::query<\/a>"],[0,1,"<a href=\"Infra\/Database\/MySqlPromiseAdapter.php.html#22\">Account\\Infra\\Database\\MySqlPromiseAdapter::close<\/a>"],[0,1,"<a href=\"Infra\/Gateway\/MailerGatewayAmazon.php.html#10\">Account\\Infra\\Gateway\\MailerGatewayAmazon::send<\/a>"],[100,1,"<a href=\"Infra\/Queue\/RabbitMQAdapter.php.html#12\">Account\\Infra\\Queue\\RabbitMQAdapter::__construct<\/a>"],[100,1,"<a href=\"Infra\/Queue\/RabbitMQAdapter.php.html#20\">Account\\Infra\\Queue\\RabbitMQAdapter::publish<\/a>"],[0,2,"<a href=\"Infra\/Queue\/RabbitMQAdapter.php.html#32\">Account\\Infra\\Queue\\RabbitMQAdapter::consume<\/a>"],[100,1,"<a href=\"Infra\/Repository\/AccountRepositoryDatabase.php.html#12\">Account\\Infra\\Repository\\AccountRepositoryDatabase::__construct<\/a>"],[100,2,"<a href=\"Infra\/Repository\/AccountRepositoryDatabase.php.html#19\">Account\\Infra\\Repository\\AccountRepositoryDatabase::getById<\/a>"],[14.285714285714285,2,"<a href=\"Infra\/Repository\/AccountRepositoryDatabase.php.html#40\">Account\\Infra\\Repository\\AccountRepositoryDatabase::getByEmail<\/a>"],[0,2,"<a href=\"Infra\/Repository\/AccountRepositoryDatabase.php.html#61\">Account\\Infra\\Repository\\AccountRepositoryDatabase::getByVerificationCode<\/a>"],[100,1,"<a href=\"Infra\/Repository\/AccountRepositoryDatabase.php.html#79\">Account\\Infra\\Repository\\AccountRepositoryDatabase::save<\/a>"],[0,1,"<a href=\"Infra\/Repository\/AccountRepositoryDatabase.php.html#87\">Account\\Infra\\Repository\\AccountRepositoryDatabase::update<\/a>"]], 'Method Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getComplexityData(data, label) {
+    var values = [];
+    $.each(data, function(key) {
+      var value = Math.round(data[key][0]*100) / 100;
+      values.push({
+        x: value,
+        y: data[key][1],
+        class: data[key][2],
+        size: 0.05,
+        shape: 'diamond'
+      });
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+});
+  </script>
+ </body>
+</html>
